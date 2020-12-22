@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>IMDB</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="Assets/fontawesome-free-5.13.0-web/css/all.css">
+    </head>
+    <body>
+      <div class="body">
+        <heading>
+          <div class="navbar">
+            <div>
+              <div class="desktop-view">
+                <div class="nav heading">
+                  <div class="left">
+                    <p class="imdb"  onclick = "location.href = 'index.html'">IMDB.</p>
+                  </div>
+                  <div class="right">
+                    <p class="now-playing" onclick = "location.href = './Module/nowplaying/nowplaying.html'">Now Playing</p>
+                    <p class="genre">Genre</p>
+                    <p class="search"><a href="Module/search/search.html">Search</a></p> 
+                    <p class="barIcon"><i class="fas fa-bars" ></i></p>
+                  </div>
+                </div>
+                <div class="genre-lists">
+                  <ul>
+                    <li><a href="./Module/Action/action.html">Action</a></li>
+                    <li><a href="./Module/Animation/animation.html">Animation</a></li>
+                    <li><a href="./Module/Comedy/comedy.html">Comedy</a></li>
+                    <li><a href="./Module/Crime/crime.html">Crime</a></li>
+                    <li><a href="./Module/Drama/drama.html">Drama</a></li>
+                    <li><a href="./Module/Music/music.html">Music</a></li>
+                    <li><a href="./Module/Romance/romance.html">Romance</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mobile-view">
+                <div>
+                <p class="now-playing" onclick = "location.href = './Module/nowplaying/nowplaying.html'">Now Playing</p>
+                <p class="genre"><i class ="fas fa-angle-right" id="genre-icon"></i> Genre</p>
+                <div class="mobile-genrelists">
+                  <ul>
+                    <li><a href="./Module/Action/action.html">Action</a></li>
+                    <li><a href="./Module/Animation/animation.html">Animation</a></li>
+                    <li><a href="./Module/Comedy/comedy.html">Comedy</a></li>
+                    <li><a href="./Module/Crime/crime.html">Crime</a></li>
+                    <li><a href="./Module/Drama/drama.html">Drama</a></li>
+                    <li><a href="./Module/Music/music.html">Music</a></li>
+                    <li><a href="./Module/Romance/romance.html">Romance</a></li>
+                  </ul>
+                </div>
+                <p class="search"><a href="Module/search/search.html">Search</a></p> 
+                </div>
+                <!-- <h1>Hello</h1> -->
+              </div>
+            </div>
+          </div> 
+        </heading>
+        <div class="content">
+          <div class="div-1">
+            <div class="left">
+              <span class="browse">BROWSE MOVIES</span><br>
+              <span class="browse-info">Get movies or TV shows <br>details and watch trailer.</span><br>
+              <button>Explore <i class="fas fa-angle-double-right"></i></button> 
+            </div>
+            <div class="right">
+              <a href="#" title="Youtube"><i class="fab fa-youtube "></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>  
+            </div>
+          </div>
+          <div class="div-2">
+            <span class="get-more">GET MORE INFO</span><br><span class="get-more-info">on how to use the IMBD API on RapidAPI</span><br>
+            <p><a href="https://rapidapi.com/blog/how-to-use-imdb-api/">Here</a></p>
+          </div>
+        </div>
+         <footer>
+           <div class="footer">
+            <p>All reserved ©2020</p>
+            <p>Developed by <a href="#">Tech-Doctor</a></p>
+           </div>   
+         </footer>
+      </div> 
+      <script  src="index.js"></script>
+    </body>
+</html>

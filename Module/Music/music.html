@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/search.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../Assets/fontawesome-free-5.13.0-web/css/all.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <div>
+        <div class="desktop-view">
+          <div class="nav heading">
+            <div class="left">
+              <p class="imdb"  onclick = "location.href = '../../index.html'">IMDB.</p>
+            </div>
+            <div class="right">
+              <p class="now-playing" onclick = "location.href = '../nowplaying/nowplaying.html'">Now Playing</p>
+              <p class="genre">Genre</p>
+              <p class="search"><a href="../search/search.html">Search</a></p> 
+              <p class="barIcon"><i class="fas fa-bars" ></i></p>
+            </div>
+          </div>
+          <div class="genre-lists">
+            <ul>
+              <li><a href="../Action/action.html">Action</a></li>
+              <li><a href="../Animation/animation.html">Animation</a></li>
+              <li><a href="../Comedy/comedy.html">Comedy</a></li>
+              <li><a href="../Crime/crime.html">Crime</a></li>
+              <li><a href="../Drama/drama.html">Drama</a></li>
+              <li><a href="../Music/music.html">Music</a></li>
+              <li><a href="../Romance/romance.html">Romance</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile-view">
+          <div>
+          <p class="now-playing" onclick = "location.href = '../nowplaying/nowplaying.html'">Now Playing</p>
+          <p class="genre"><i class ="fas fa-angle-right" id="genre-icon"></i> Genre</p>
+          <div class="mobile-genrelists">
+            <ul>
+              <li><a href="../Action/action.html">Action</a></li>
+              <li><a href="../Animation/animation.html">Animation</a></li>
+              <li><a href="../Comedy/comedy.html">Comedy</a></li>
+              <li><a href="../Crime/crime.html">Crime</a></li>
+              <li><a href="../Drama/drama.html">Drama</a></li>
+              <li><a href="../Music/music.html">Music</a></li>
+              <li><a href="../Romance/romance.html">Romance</a></li>
+            </ul>
+          </div>
+          <p class="search"><a href="../search/search.html">Search</a></p> 
+          </div>
+          <!-- <h1>Hello</h1> -->
+        </div>
+      </div>
+    </div>
+    <div class="movie-container">
+      <div class="overlay"></div>
+      <div class="label-container">
+        <h1 id="movieTitleLabel"></h1>
+      </div>   
+      <div id="movie-grid">
+      </div>
+    </div>  
+    <script src="music.js"></script>
+  </body>
+</html>

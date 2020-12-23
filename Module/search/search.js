@@ -86,16 +86,17 @@ fetch(searchMovieUrl)
 .then (resp => resp.json())
 .then(movieKey => {
   console.log(movieKey);
-
+  console.log('movieKey', movieKey)
   let poster = imageUrl+'w200'+dataResult.poster_path;
   let title = dataResult.original_title;
   let releaseDate = dataResult.release_date;
   let overview = dataResult.overview;
   let voteAverage = dataResult.vote_average;		
-  let youtubeKey = movieKey.results[0].key;
-
-
-  let youtubeLink = 'https://www.youtube.com/watch?v='+youtubeKey;
+  let youtubeKey = movieKey.results;
+  // console.log(youtubeKey)
+  
+  // let youtubeLink = 'https://www.youtube.com/watch?v='+youtubeKey;
+  
   
 
 const movieContentHTML = () => {
@@ -107,13 +108,13 @@ const movieContentHTML = () => {
         <p class="close">&times</p>
         <div class = "modal-content">
           <div class="moviePosterInModal">
-            <a href="${youtubeLink}"><img id="modalImage"src="${poster}"></a>
+            <a href="#"><img id="modalImage"src="${poster}"></a>
           </div><br>
           <div class="movieDetails">
             <div class="movieName">${title}</div><br>
             <div class="linkToTrailer"><span class="glyphicon glyphicon-play"></span>&nbspPlay trailer</div><br>
-            <iframe id="videoPlayer" height="345" width="720" src="https://www.youtube.com/embed/${youtubeKey}" frameborder = "0" allowfullscreen>
-            </iframe>
+            ${youtubeKey.length > 0 ? `<iframe id="videoPlayer" height="345" width="720" src="https://www.youtube.com/embed/${youtubeKey[0].key}" frameborder = "0" allowfullscreen>
+            </iframe>`: ''}
             <div class="release">Release Date: ${releaseDate}</div><br>
             <div class="overview">${overview}</div><br>
             <div class="rating">Rating: ${voteAverage}/10

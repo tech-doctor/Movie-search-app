@@ -60,7 +60,7 @@ search.addEventListener("click",  (event) => {
 
 function searchMovie()  {
 let searchResult = searchInput.value
-let searchMovieUrl = "http://api.themoviedb.org/3/search/movie?api_key=af6b563ec687bcd938b75f366399aa4c&language=en-US&page=1&include_adult=false&query=" + searchResult;
+let searchMovieUrl = "https://api.themoviedb.org/3/search/movie?api_key=af6b563ec687bcd938b75f366399aa4c&language=en-US&page=1&include_adult=false&query=" + searchResult;
   
 let  loader =`<div class="loading"></div>`
   movieGrid.innerHTML = loader;

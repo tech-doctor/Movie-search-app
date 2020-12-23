@@ -39,7 +39,7 @@ const movieTitleLabel = document.getElementById("movieTitleLabel");
 
 
 let imageUrl = 'https://image.tmdb.org/t/p/';
-let apiBaseURL = 'http://api.themoviedb.org/3/';
+let apiBaseURL = 'https://api.themoviedb.org/3/';
 let genre_id = 28
 let actionUrl = apiBaseURL + 'genre/' + genre_id + '/movies?api_key=af6b563ec687bcd938b75f366399aa4c'  
 let  loader =`<div class="loading"></div>`

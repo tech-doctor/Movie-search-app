@@ -38,7 +38,7 @@ const movieTitleLabel = document.getElementById("movieTitleLabel");
 
 let imageUrl = 'https://image.tmdb.org/t/p/';
 
-let apiBaseURL = 'http://api.themoviedb.org/3/';
+let apiBaseURL = 'https://api.themoviedb.org/3/';
 
 let nowPlayingUrl = apiBaseURL + 'movie/now_playing?api_key=af6b563ec687bcd938b75f366399aa4c'
   

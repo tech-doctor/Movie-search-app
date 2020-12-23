@@ -65,7 +65,7 @@ fetch(actionUrl)
   let releaseDate = genreDataResult.release_date;
   let overview = genreDataResult.overview;
   let voteAverage = genreDataResult.vote_average;		
-  let youtubeKey = movieKey.results[0].key;
+  let youtubeKey = movieKey.results;
 
 
   let youtubeLink = 'https://www.youtube.com/watch?v='+youtubeKey;
@@ -85,8 +85,8 @@ const movieContentHTML = () => {
           <div class="movieDetails">
             <div class="movieName">${title}</div><br>
             <div class="linkToTrailer"><span class="glyphicon glyphicon-play"></span>&nbspPlay trailer</div><br>
-            <iframe id="videoPlayer" height="345" width="720" src="https://www.youtube.com/embed/${youtubeKey}" frameborder = "0" allowfullscreen>
-            </iframe>
+            ${youtubeKey.length > 0 ? `<iframe id="videoPlayer" height="345" width="720" src="https://www.youtube.com/embed/${youtubeKey[0].key}" frameborder = "0" allowfullscreen>
+            </iframe>`: ''}
             <div class="release">Release Date: ${releaseDate}</div><br>
             <div class="overview">${overview}</div><br>
             <div class="rating">Rating: ${voteAverage}/10

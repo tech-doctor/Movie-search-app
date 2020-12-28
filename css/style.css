@@ -33,7 +33,6 @@ body{
     font-family: Arial;
     cursor: pointer;
     display: none;
-    /* padding:  0em 1em; */
 }
 .fa-bars{
     font-size: 35px;
@@ -63,10 +62,10 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding:  8em 1em;
-    background-image: url("../Assets/GOW1.jpg");
+    padding:  6em 3em;
+    /* background-image: url("../Assets/GOW1.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     background-color: black;
     color: white;
     line-height: 1.5;
@@ -101,41 +100,120 @@ body{
    background:  rgb(233, 59, 59);
 }
 
-
 .content .div-1 .right{
-    transform: rotate(90deg);  
-    margin-top: 250px;
+    width: 50%;
+    height: 100%;
+}
+.content .div-1 .right img{
+    width: 100%;
+    height: 70vh;
+
+}
+/* .content .div-1 .right p{
+    background-color: rgb(221, 221, 221);
+    color: black;
+    position: relative;
+    bottom: 95px;
+    width: 20%;
+    text-align:center ;
+    padding: 0.2em;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+.content .div-1 .right button{
+    position: relative;
+    bottom: 260px;
+    font-size: 40px;
+    width: 50px;
+    background-color: black;
+    color: white;
+    border: 0px solid rgb(141, 141, 141);
+    cursor: pointer;
+    outline: none;
+}
+.content .div-1 .right button:hover{
+    color: rgb(107, 107, 107);
+}
+
+.content .div-1 .right .btn-right{
+    float: right;
+}
+
+
+
+.content .div-1 .social-icon{
+    margin-top: 10px;
     
 }
 
-.content .div-1 .right *{
-    transform: rotate(-90deg);      
-}
-.content .div-1 .right a{
+
+.content .div-1  a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin-left: 10px;
-    font-size: 20px;      
+    font-size: 30px;      
 }
-.content .div-2{
-    background-image: url("../Assets/GOW3.png");
-    background-repeat: no-repeat;
-    background-position:   left;
+.content .div-1 a:hover{
+    color: rgb(134, 134, 134);     
+}
+
+.hr{
     background-color: black;
-    background-size: contain;
     color: white;
-    text-align: right;
-    padding: 7em 4em;
-    height: 70vh;
+
+}
+
+.content .div-2{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 6em 0em;
+    flex-wrap: wrap;
+    color: white;
+    width: 100%;
+    height: 100%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
-.content .div-2 .get-more{
+.content .div-2 img{
+    width: 15%;
+}
+.content .div-2 .watch{
     font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;   
 }
-.content .div-2 .get-more-info{
-    font-size: 20px;
+
+.content .div-2 .watch-info{
+    font-size: 30px;
+    color: rgb(180, 180, 180);   
 }
-.content .div-2 a{
+
+.content .div-3{
+     background-image: url("../Assets/GOW3.png");
+    background-repeat: no-repeat;
+    background-position:   right;
+    text-align: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 10em  0em;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+.content .div-3 .get-more{
+    font-size: 75px;
+}
+.content .div-3 .get-more-info{
+    font-size: 30px;
+}
+.content .div-3 a{
     color: white;
     background-color: rgb(33, 149, 153);
     box-shadow: 3px 1px 10px 4px rgb(33, 149, 153);
@@ -148,8 +226,34 @@ body{
 
 }
 
-.content .div-2 p{
+.content .div-3 p{
     margin-top: 20px;
+}
+
+@media(max-width:1200px){
+    .content .div-1 .right{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .content .div-1 .right img{
+        width: 100%;
+        height: 50vh;    
+    }
+    .content .div-2 img{
+        width: 20%;
+    }
+    .content .div-2 .watch{
+        font-size: 35px;   
+    }
+    .content .div-2 .watch-info{
+        font-size: 25px;    
+    }
+    .content .div-3 .get-more{
+        font-size: 55px;
+    }
+    .content .div-3 .get-more-info{
+        font-size: 20px;
+    }
 }
 
 @media(min-width:760px){
@@ -167,48 +271,68 @@ body{
 
     }
     .content .div-1 .right{
-        transform: rotate(0deg); 
         margin-top: 20px;
+    }
+    .content .div-1 .right img{
+        height: 40vh;    
     }
     .content .div-1 .left{
         width: 100%;
     }
     
-    .content .div-1 .right *{
-        transform: rotate(0deg);      
-    }
     .content .div-1 .left .browse{
         font-size: 55px;   
     }
     .content .div-1 .left .browse-info{
         font-size: 17px;   
     }
+    .content .div-1 .left a{
+        font-size: 22px;   
+    }
     .content .div-1 .left button{
         padding: 0.7em 1.5em;
         font-size: 17px;
     }
-    .content .div-2{
+    .content .div-1 .right button{
+        bottom: 200px;
+    }
+    .content .div-2 img{
+        width: 25%;
+    }
+    .content .div-2 .watch-div{
+        margin-top: 20px;
+       text-align: center;
+    }
+    .content .div-2 .watch{
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+       
+    }
+    
+    .content .div-2 .watch-info{
+        font-size: 20px;
+        color: rgb(180, 180, 180);
+        
+    }
+    
+    .content .div-3{
         margin: auto;
         padding: 7em 1em;
         background-size: cover;
         background-position: right;
         text-align: center;
     }
-    .content .div-2 .get-more{
+    .content .div-3 .get-more{
         font-size:40px;
     }
-    .content .div-2 .get-more-info{
+    .content .div-3 .get-more-info{
         font-size: 20px;
     }
-    .content .div-2 a{
-        color: white;
-        background-color: rgb(33, 149, 153);
+    .content .div-3 a{
         padding: 0.5em 2em;
-        text-decoration: none;
-        border-radius: 4px;
-        
+        border-radius: 4px;   
     }
-    
+   
 }
 
 .footer{

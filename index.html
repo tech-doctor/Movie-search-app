@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="Assets/fontawesome-free-5.13.0-web/css/all.css">
+        <link rel="shortcut icon" type="image/jpg" href="Assets/IMDB icon.jpg"/>
     </head>
     <body>
       <div class="body">
@@ -62,17 +63,56 @@
           <div class="div-1">
             <div class="left">
               <span class="browse">BROWSE MOVIES</span><br>
-              <span class="browse-info">Get movies or TV shows <br>details and watch trailer.</span><br>
-              <button>Explore <i class="fas fa-angle-double-right"></i></button> 
+              <span class="browse-info">Get movies or TV shows details.<br>watch anywhere, Cancel anytime. </span><br>
+              <button onclick = "location.href = './Module/nowplaying/nowplaying.html'">Explore <i class="fas fa-angle-double-right"></i></button> <br>
+              <div class="social-icon">
+                <a href="https://www.youtube.com/imdb" title="Youtube"><i class="fab fa-youtube "></i></a>
+                <a href="https://twitter.com/imdb" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://web.facebook.com/imdb?_rdc=1&_rdr" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/imdb/" title="Instagram"><i class="fab fa-instagram"></i></a>  
+              </div> 
             </div>
             <div class="right">
-              <a href="#" title="Youtube"><i class="fab fa-youtube "></i></a>
-              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-              <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>  
+              
+              <div class="mySlides">
+                <img src="Assets/bad-boys.jpg">
+              </div>
+              <div class="mySlides">
+                <img src="Assets/GOT.jpg">
+              </div>
+              <div class="mySlides">
+                <img src="Assets/salt.jpg">
+              </div>
+              <div class="mySlides">
+                <img src="Assets/coco.jpg">
+              </div>
+              <div class="mySlides">
+                <img src="Assets/After.jpg">
+              </div>
+              <div class="mySlides">
+                <img src="Assets/underground.jpg">
+              </div>
+              <button class="btn-left" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="btn-right" onclick="plusDivs(+1)">&#10095;</button>
             </div>
+
+            <!-- <div class="right">
+              <a href="https://www.youtube.com/imdb" title="Youtube"><i class="fab fa-youtube "></i></a>
+              <a href="https://twitter.com/imdb" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://web.facebook.com/imdb?_rdc=1&_rdr" title="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/imdb/" title="Instagram"><i class="fab fa-instagram"></i></a>  
+            </div> -->
           </div>
+          <!-- <hr> -->
           <div class="div-2">
+            <img class="" src="Assets/Phone.png">
+            <img class="" src="Assets/watch.png">
+            <div class="watch-div">
+              <span class="watch">WATCH TRAILER.</span><br>
+              <span class="watch-info">Access your favorite movies/TV shows.<br> and watch trailer without paying a dime 😉. </span><br>
+            </div> 
+          </div>
+          <div class="div-3">
             <span class="get-more">GET MORE INFO</span><br><span class="get-more-info">on how to use the IMBD API on RapidAPI</span><br>
             <p><a href="https://rapidapi.com/blog/how-to-use-imdb-api/">Here</a></p>
           </div>
@@ -80,7 +120,7 @@
          <footer>
            <div class="footer">
             <p>All reserved ©2020</p>
-            <p>Developed by <a href="#">Tech-Doctor</a></p>
+            <p>Developed by <a href="https://olukaisaac.netlify.app/">Tech-Doctor</a></p>
            </div>   
          </footer>
       </div> 

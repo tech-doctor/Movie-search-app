@@ -41,6 +41,7 @@ function plusDivs(n) {
   showDivs(slideIndex += n);
 }
 
+///// slide to next image 
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");

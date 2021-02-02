@@ -391,7 +391,7 @@ body{
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   border-radius: 50%;
-	animation: load 2s infinite linear;   
+	animation: load 2s infinite linear;  
 }
 
 @keyframes load {

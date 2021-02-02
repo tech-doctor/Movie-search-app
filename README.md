@@ -31,4 +31,5 @@ https://moviesearchproject.netlify.app/
  * Basic knowledge in HTML, CSS and Javascript
  * Knowledge in fetching and displaying form of  data from a remote API 
  #### API USED: 
- IMDb API check how to use [HERE](https://rapidapi.com/blog/how-to-use-imdb-api/)
+ IMDb API. 
+ check how to use [HERE](https://rapidapi.com/blog/how-to-use-imdb-api/)

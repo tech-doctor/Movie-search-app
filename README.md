@@ -14,7 +14,7 @@ A completed hosted personal project of me. it was developed to allow easy  acces
 
 
 ### Image: 
- <img src="Assets/tabletmockup edited.jpg" width="40%" height="40%">  |   <img src="Assets/watch.png" width="30%" height="30%">
+ <img src="Assets/tabletmockup edited.jpg" width="0%" height="50%">  |   <img src="Assets/watch.png" width="18%" height="18%">
  
  <img src="Assets/movieApp2.png" width="60%" height="60%">
 

@@ -40,6 +40,7 @@ const topRatedUrl = `${apiBaseURL}movie/top_rated?api_key=${apiKey}`
  .then(([nowPlaying,topRated]) => {
    const nowPlayingData = shuffle(nowPlaying.results).slice(4,10)
    const topRatedData = shuffle(topRated.results).slice(4,10)
+    //console.log(nowPlaying)
     nowPlayingData.forEach(element => {
       fetchKey(element.id)
       .then(key => {
@@ -58,7 +59,6 @@ const topRatedUrl = `${apiBaseURL}movie/top_rated?api_key=${apiKey}`
     spinner.forEach(spinner => {
       spinner.style.display = "none"
      })
-   
   })
 
   

@@ -8,6 +8,7 @@ body {
   height: 100%;
   overflow-x: hidden;
 }
+
 .body .scroll_up {
   display: none;
   text-align: center;
@@ -106,6 +107,12 @@ body {
 .nav .right p a:hover {
   transform: scale(0.9);
   background-color: rgb(216, 62, 62);
+}
+
+@media (max-width: 400px) {
+  .nav_link a {
+    display: none;
+  }
 }
 
 .body .content {

@@ -6,102 +6,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="Assets/fontawesome-free-5.13.0-web/css/all.css">
-        <link rel="shortcut icon" type="image/jpg" href="Assets/IMDB icon.jpg"/>
-    </head>
+        <link rel="shortcut icon" type="image/jpg" href="Assets/IMDB icon.jpg"/>  
+      </head>
     <body>
       <div class="body">
-        <heading>
-          <div class="navbar">
-            <div>
-              <div class="desktop-view">
-                <div class="nav heading">
-                  <div class="left">
-                    <p class="imdb"  onclick = "location.href = 'index.html'">IMDB.</p>
-                  </div>
-                  <div class="right">
-                    <p class="now-playing" onclick = "location.href = './Module/nowplaying/nowplaying.html'">Now Playing</p>
-                    <p class="genre">Genre</p>
-                    <p class="search"><a href="Module/search/search.html">Search</a></p> 
-                    <p class="barIcon"><i class="fas fa-bars" ></i></p>
-                  </div>
-                </div>
-                <div class="genre-lists">
-                  <ul>
-                    <li><a href="./Module/Action/action.html">Action</a></li>
-                    <li><a href="./Module/Animation/animation.html">Animation</a></li>
-                    <li><a href="./Module/Comedy/comedy.html">Comedy</a></li>
-                    <li><a href="./Module/Crime/crime.html">Crime</a></li>
-                    <li><a href="./Module/Drama/drama.html">Drama</a></li>
-                    <li><a href="./Module/Music/music.html">Music</a></li>
-                    <li><a href="./Module/Romance/romance.html">Romance</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="mobile-view">
-                <div>
-                <p class="now-playing" onclick = "location.href = './Module/nowplaying/nowplaying.html'">Now Playing</p>
-                <p class="genre"><i class ="fas fa-angle-right" id="genre-icon"></i> Genre</p>
-                <div class="mobile-genrelists">
-                  <ul>
-                    <li><a href="./Module/Action/action.html">Action</a></li>
-                    <li><a href="./Module/Animation/animation.html">Animation</a></li>
-                    <li><a href="./Module/Comedy/comedy.html">Comedy</a></li>
-                    <li><a href="./Module/Crime/crime.html">Crime</a></li>
-                    <li><a href="./Module/Drama/drama.html">Drama</a></li>
-                    <li><a href="./Module/Music/music.html">Music</a></li>
-                    <li><a href="./Module/Romance/romance.html">Romance</a></li>
-                  </ul>
-                </div>
-                <p class="search"><a href="Module/search/search.html">Search</a></p> 
-                </div>
-                <!-- <h1>Hello</h1> -->
-              </div>
-            </div>
-          </div> 
-        </heading>
+        <div class="scroll_up">
+          <i class="fas fa-angle-up"></i>
+        </div>
+       <div class="header">
+         <!-- header -->
+       </div>
         <div class="content">
-          <div class="div-1">
+          <div class=" div-1">
             <div class="left">
               <span class="browse">BROWSE MOVIES</span><br>
               <span class="browse-info">Get movies or TV shows details.<br>watch anywhere, Cancel anytime. </span><br>
               <button onclick = "location.href = './Module/nowplaying/nowplaying.html'">Explore <i class="fas fa-angle-double-right"></i></button> <br>
-              <div class="social-icon">
-                <a href="https://www.youtube.com/imdb" title="Youtube"><i class="fab fa-youtube "></i></a>
-                <a href="https://twitter.com/imdb" title="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://web.facebook.com/imdb?_rdc=1&_rdr" title="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/imdb/" title="Instagram"><i class="fab fa-instagram"></i></a>  
-              </div> 
             </div>
-            <div class="right">
+            <div class="sideShow_div">
+                <!-- START -->
+              <div class="slideshow-container">
+                <!-- <div class="mySlides fade">
+                  <img src="./Assets/slider1.jpg" style="width:100%">
+                </div>
               
-              <div class="mySlides">
-                <img src="Assets/bad-boys.jpg">
+                <div class="mySlides fade">
+                  <img src="./Assets/slider2.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="./Assets//slider3.jpg" style="width:100%">
+                </div> -->
+              
+                <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
               </div>
-              <div class="mySlides">
-                <img src="Assets/GOT.jpg">
+              <br>
+              
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
               </div>
-              <div class="mySlides">
-                <img src="Assets/salt.jpg">
-              </div>
-              <div class="mySlides">
-                <img src="Assets/coco.jpg">
-              </div>
-              <div class="mySlides">
-                <img src="Assets/After.jpg">
-              </div>
-              <div class="mySlides">
-                <img src="Assets/underground.jpg">
-              </div>
-              <button class="btn-left" onclick="plusDivs(-1)">&#10094;</button>
-              <button class="btn-right" onclick="plusDivs(+1)">&#10095;</button>
             </div>
-
-            <!-- <div class="right">
-              <a href="https://www.youtube.com/imdb" title="Youtube"><i class="fab fa-youtube "></i></a>
-              <a href="https://twitter.com/imdb" title="Twitter"><i class="fab fa-twitter"></i></a>
-              <a href="https://web.facebook.com/imdb?_rdc=1&_rdr" title="Facebook"><i class="fab fa-facebook"></i></a>
-              <a href="https://www.instagram.com/imdb/" title="Instagram"><i class="fab fa-instagram"></i></a>  
-            </div> -->
+             <!-- STOP --> 
+            
+            
+            <div class="right">
+             <!-- right -->
+            </div>
           </div>
           <!-- <hr> -->
           <div class="div-2">
@@ -111,6 +65,35 @@
               <span class="watch">WATCH TRAILER.</span><br>
               <span class="watch-info">Access your favorite movies/TV shows.<br> and watch trailer without paying a dime 😉. </span><br>
             </div> 
+          </div> 
+          <div id="nowPlaying" class="nowPlaying-div extra-div">
+            <div class="section div-area">
+              <div class="heading">
+                <p>NOW PLAYING</p>
+              </div>
+              
+              <div class="body fade">
+                
+                <!-- Movie-Card -->
+              </div>
+              <div class="spinner"></div>
+              
+            </div>  
+          </div>
+
+          <div id="topRated" class="topRated-div extra-div">
+            <div class="section div-area">
+              <div class="heading">
+                <p class="paragraph-1">featured</p>
+                <p class="paragraph-2">TOP RATED</p>
+                <p class="paragraph-3">Check out Top-rated movies</p>
+              </div>
+              
+              <div class="body">
+                <!-- Movie-Card -->
+              </div>
+              <div class="spinner"></div>
+            </div>  
           </div>
           <div class="div-3">
             <span class="get-more">GET MORE INFO</span><br><span class="get-more-info">on how to use the IMBD API on RapidAPI</span><br>
@@ -119,11 +102,51 @@
         </div>
          <footer>
            <div class="footer">
-            <p>All reserved ©2020</p>
-            <p>Developed by <a href="https://olukaisaac.netlify.app/">Techie-Doctor</a></p>
+             <div class="upper">
+               <div class="flex-footer">
+                 <div class=" flex flex-1">
+                   <p style="font-size: 30px; font-weight: 600;">IMDB</p>
+                   <p><a href="#">Address</a></p>
+                   <div class="social-icon">
+                    <a href="https://www.youtube.com/imdb" title="Youtube"><i class="fab fa-youtube "></i></a>
+                    <a href="https://twitter.com/imdb" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://web.facebook.com/imdb?_rdc=1&_rdr" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/imdb/" title="Instagram"><i class="fab fa-instagram"></i></a>  
+                  </div> 
+                 </div>
+                 <div class=" flex flex-2">
+                   <p class="footer-head">DISPLAY TYPE</p>
+                   <p><a href="#">Action</a></p>
+                   <p> <a href="#">Comedy</a> </p>
+                   <p> <a href="#">Drama</a></p>
+                    <p> <a href="#">Horror</a></p>
+                 </div>
+
+                 <div class=" flex flex-3">
+                  <p class="footer-head">PRODUCTION</p>
+                  <p><a href="#">2018 Year</a></p>
+                  <p> <a href="#">2019 Year</a> </p>
+                  <p> <a href="#">2020 Year</a></p>
+                  <p> <a href="#">2021 Year</a></p>
+                </div>
+
+                <div class=" flex flex-4">
+                  <p class="footer-head">DISPLAY QUALITY</p>
+                  <p><a href="#">720p HDTV</a></p>
+                  <p> <a href="#">1080p BluRay</a> </p>
+                  <p> <a href="#">720p BluRay</a></p>
+                  <p> <a href="#">1080p HDTV</a></p>
+                </div>
+               </div>
+             </div>
+             <div class="lower">
+              <p>All reserved ©2020</p>
+              <p>Developed by <a href="https://olukaisaac.netlify.app/">Techie-Doctor</a></p>
+             </div>
            </div>   
          </footer>
       </div> 
+      <script id="replace_with_navbar" src="/Component/header.js"></script>
       <script  src="index.js"></script>
     </body>
 </html>

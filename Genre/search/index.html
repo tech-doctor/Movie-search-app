@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/search.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../Assets/fontawesome-free-5.13.0-web/css/all.css">
+  </head>
+  <body>
+    <div class = header>
+      <!-- header -->
+    </div>
+    <div class="first">
+      <div class="form">
+        <form>
+            <input id="search-box" class="fontAwesome" type="search" name="search" placeholder="Enter movie name..." required><i class="fas fa-search"></i>
+            <button id="search-button" type="submit">Search</button>
+            <p class="paragraphText">Sharing a few of our favourite movies...</p>
+        </form>    
+      </div>
+    </div>
+    <!-- <div class="iframe"></div> -->
+    <div class="movie-container">
+      <div class="overlay"></div>
+      <div class="label-container">
+        <h1 id="movieTitleLabel"></h1>
+      </div>   
+      <div id="movie-grid">
+        <!-- <div class="loading"></div> -->
+        <!-- <p>please wait..</p> -->
+      </div>
+    </div>  
+    <script src = "/Component/header.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>

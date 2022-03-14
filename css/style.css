@@ -1,14 +1,12 @@
 body {
   margin: 0 auto;
-  position: relative;
+  overflow-x: hidden;
 }
 
 .body {
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
 }
-
 .body .scroll_up {
   display: none;
   text-align: center;
@@ -33,6 +31,11 @@ body {
 .body .scroll_up i {
   color: white;
 }
+.header {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
 
 .nav {
   background-color: #2b2b2b;
@@ -41,9 +44,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* position: fixed;
-  z-index: 10;
-  width: 97%; */
 }
 
 .nav .right {
@@ -128,7 +128,7 @@ body {
   padding: 10em 3em;
   height: 50vh;
   font-family: "Poppins", sans-serif;
-  background-image: url("../Assets/slider1.jpg");
+  //background-image: url("../Assets/slider1.jpg");
   /* background-image: linear-gradient(90deg, black, transparent),
     url("../Assets/slider1.jpg"); */
   background-size: cover;
@@ -223,14 +223,14 @@ body {
 
 /* Fading animation */
 
-.fade {
+.fade_in {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes fade-in {
   from {
     opacity: 0.4;
   }
@@ -239,12 +239,14 @@ body {
   }
 }
 
-@keyframes fade {
+@keyframes fade-in {
   from {
     opacity: 0.4;
+    top: 200px;
   }
   to {
     opacity: 1;
+    top: 0px;
   }
 }
 
@@ -253,6 +255,8 @@ body {
 .content .div-1 .left {
   font-family: "Poppins", sans-serif;
   height: 100%;
+  position: relative;
+  animation: fade-in 2000ms;
 }
 
 .content .div-1 .left .browse {
@@ -330,28 +334,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 6em 0em;
+  padding: 8em 0em;
   flex-wrap: wrap;
   color: white;
   width: 100%;
   height: 100%;
+  margin: auto;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-family: "Poppins", sans-serif;
 }
+
 .content .div-2 img {
-  width: 15%;
+  width: 12%;
 }
+
 .content .div-2 .watch {
-  font-size: 55px;
+  font-size: 50px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .content .div-2 .watch-info {
-  font-size: 30px;
+  font-size: 27px;
   color: rgb(180, 180, 180);
 }
 
 .content .nowPlaying-div {
+  border: 1px solid white;
   padding: 6em 2em;
   background-color: #1c1c1c;
 }
@@ -392,13 +400,39 @@ body {
   grid-gap: 15px;
   overflow: hidden;
   position: relative;
+}
+
+.move-up {
   animation: move_up 2s;
+}
+
+/* .div-area .body {
+  border: 1px solid white;
+  margin: auto;
+  width: 95%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+} */
+
+section::scrollbar {
+  display: none;
+}
+
+.div-area .angle {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.div-area .angle_right {
+  margin-left: 10px;
 }
 
 @keyframes move_up {
   0% {
     bottom: -100px;
-    opacity: 0.3;
+    opacity: 0.2;
   }
   50% {
     opacity: 0.7;
@@ -417,6 +451,7 @@ body {
   padding: 2em 1em;
   animation: slide_down 0.7s;
   display: none;
+  z-index: 1;
 }
 
 @keyframes slide_down {
@@ -428,11 +463,24 @@ body {
   }
 }
 
-.div-area .body .card {
+/* .div-area .body .card {
   position: relative;
   width: 100%;
   cursor: pointer;
   background-color: #2c2c2c;
+} */
+
+.div-area .body .card {
+  border: 1px solid white;
+  width: 100%;
+  //height: 40%;
+  cursor: pointer;
+  background-color: #2c2c2c;
+  margin: 0 20px 0 0;
+  //position: relative;
+  //left: 0;
+  transition: 0.5s;
+  //opacity: 0;
 }
 
 .div-area .body .card:hover {
@@ -440,6 +488,16 @@ body {
   transform: scale(1.05);
 }
 
+/* new image */
+/* .div-area .body .card .image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 20px;
+} */
+/* //////// */
 .div-area .body .card .image img {
   width: 100%;
   height: 200px;
@@ -674,6 +732,14 @@ body {
     padding: 0.5em 2em;
     border-radius: 4px;
   }
+
+  /* New */
+  .div-area .body .card {
+    min-width: 49%;
+    margin: 0 20px 0 0;
+  }
+
+  /* ///////// */
 }
 
 .footer {

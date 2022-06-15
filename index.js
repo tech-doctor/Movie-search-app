@@ -35,7 +35,7 @@ function uploadData(){
     movieBody.innerHTML = `<div class="spinner"></div>`
     fetchAll()
    .then(([nowPlaying,topRated]) => {
-     const nowPlayingData = shuffle(nowPlaying.results).slice(4,10)
+     const nowPlayingData = shuffle(nowPlaying.results).slice(2,10)
      const topRatedData = shuffle(topRated.results).slice(4,10)
       //console.log(nowPlaying)
       nowPlayingData.forEach(element => {
@@ -110,13 +110,13 @@ function uploadData(){
 
 //uploadData()
 const body = document.querySelectorAll('.div-area .body')
- console.log(body)
+// console.log(body)
 
 
 const observer = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
-      console.log(entry)
+     // console.log(entry)
       if(!entry.isIntersecting){
         return;
       }else{
@@ -127,7 +127,7 @@ const observer = new IntersectionObserver(
       }
       if(entry.isIntersecting) observer.unobserve(entry.target)
     })
-    console.log(entries)
+   // console.log(entries)
     
   }, {
     threshold: 0.5,
@@ -138,78 +138,7 @@ const observer = new IntersectionObserver(
 
 
  const extraDiv = document.querySelector('.extra-div');
-
-
   observer.observe(extraDiv);
-
-
-
-
-
-
-
-
-
-
-
-  // let  angle = document.querySelectorAll('.angle')
-  // let  angleLeft = document.querySelector('.angle_left');
-  // let  angleRight = document.querySelector('.angle_right');
-  // let  movieCard = document.querySelectorAll(' .card')
-  // let  movie_page = Math.ceil(movieCard.length/4);
-  // let  l = 0;
-  // let  movePer = 25.34;
-  // let  maxMove = 203;
-  
-  
-  
-  // let mobile_view = window.matchMedia("(max-width: 760px)");
-  
-  //  if(mobile_view.matches){
-  //    movePer = 50.36;
-  //    maxMove = 504;
-  //  }
-  
-  // let right_mover = () => {
-  //   l = l + movePer;
-  //   if(movieCard == 1) {
-  //     console.log('true')
-  //     l = 0
-  //   }
-  //   for(const i of movieCard){
-  //     if( l > maxMove) {
-  //       l = l - movePer;
-  //     }
-  //     i.style.left = '-' + l + '%';
-  //   }
-  // }
-  
-  // let left_mover = () => {
-  //   l = l -movePer;
-  //   if( l <= 0){
-  //     l = 0;
-  //   }
-  //   for(const i of movieCard ){
-  //     if(movie_page > 1) 
-  //      i.style.left = '-' + l + '%'
-  //   }
-  // }
-  
-  //  angle[0].addEventListener('click', () => {
-  //    console.log('left')
-  //    left_mover();
-  
-  //  })
-  
-  //  angle[1].addEventListener('click', () => {
-  //   console.log('right')
-  //   right_mover();
-  // })
-
-
-
-
-
 
 
 const angleUpButton = document.querySelector('.body .scroll_up');
@@ -246,35 +175,14 @@ angleUpButton.addEventListener('click', () => {
   }
 
 
-//   var slideIndex = 1;
-// showSlides(slideIndex);
+  const clickFunctionRight = (getSlider) => {
+    let slider =  document.querySelector(`.${getSlider}`)
+    //console.log(slider)
+    slider.scrollLeft = slider.scrollLeft + 500
+}
 
-// // Next/previous controls
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
-
-// // Thumbnail image controls
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-// function showSlides(n) {
-//   var i;
-//   var slides = document.getElementsByClassName("mySlides");
-//   var dots = document.getElementsByClassName("dot");
-//   if (n > slides.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//       slides[i].style.display = "none";
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//       dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex-1].style.display = "block";
-//   dots[slideIndex-1].className += " active";
-// }
-
-
-
+const clickFunctionLeft = (getSlider) => {
+    let slider =  document.querySelector(`.${getSlider}`)
+    slider.scrollLeft = slider.scrollLeft - 500
+}
 

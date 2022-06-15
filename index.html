@@ -53,9 +53,10 @@
              <!-- STOP --> 
             
             
-            <div class="right">
-             <!-- right -->
-            </div>
+            <!-- <div class="right">
+             
+            </div> -->
+            
           </div>
           <!-- <hr> -->
           <div class="div-2">
@@ -73,14 +74,19 @@
               <div class="heading">
                 <p>NOW PLAYING</p>
               </div>
-              <!-- <span class="angle angle_left" style="color: white;"> &#139;</span>
-              <span class="angle angle_right" style="color: white;"> &#155;</span> -->
-              <div class=" now_playing body">
-                
-                <!-- Movie-Card -->
+              <div class="slider_container">
+                <i 
+                onclick="clickFunctionLeft('now_playing')"
+                class="fa fa-angle-left now_angle_left angle" aria-hidden="true"></i>
+                <div class=" now_playing body">
+                  
+                  <!-- Movie-Card -->
+                </div>
+                <i 
+                onclick="clickFunctionRight('now_playing')"
+                class="fa fa-angle-right now_angle_right angle" aria-hidden="true"></i>
+                <div class="spinner"></div>
               </div>
-              <div class="spinner"></div>
-              
             </div>  
           </div>
 
@@ -92,10 +98,20 @@
                 <p class="paragraph-3">Check out Top-rated movies</p>
               </div>
               
-              <div class="body">
-                <!-- Movie-Card -->
+              <div class="slider_container">
+                <i 
+                onclick="clickFunctionLeft('top_rated')"
+                class="fa fa-angle-left top_angle_left angle" aria-hidden="true"></i>
+                  <div class="body top_rated">
+                    <!-- Movie-Card -->
+                  </div>
+                  <div class="spinner"></div>
+                <i 
+                onclick="clickFunctionRight('top_rated')"
+                class="fa fa-angle-right top_angle_right angle" aria-hidden="true"></i>
+                <div class="spinner"></div>
               </div>
-              <div class="spinner"></div>
+              
             </div>  
           </div>
           <div class="div-3">

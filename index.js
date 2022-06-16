@@ -74,14 +74,15 @@ function uploadData(){
     ///Each card on the list
   const eachCard = (data, youtubeLink) => {
      const {title, release_date,poster_path } = data;
+     const minimalTitle = TextAbstract(title, 30);
      const result = 
      `<div class="card">
        <div class="play-icon"><a  href= ${youtubeLink} ><i class=" fas fa-play"></i></a></div>
        <div class="image">
-         <img alt = "" src=${imageUrl}w200${poster_path}>
+         <img loading ="lazy" alt = ${title} src=${imageUrl}w200${poster_path}>
        </div>
        <div class="details">
-          <p class="title">${title}</p>
+          <p class="title">${minimalTitle}</p>
          <p class="date">${release_date}</p>
        </div>
      </div>`
@@ -176,6 +177,7 @@ angleUpButton.addEventListener('click', () => {
   }
 
 
+
   const clickFunctionRight = (getSlider) => {
     let slider =  document.querySelector(`.${getSlider}`)
     //console.log(slider)
@@ -185,5 +187,20 @@ angleUpButton.addEventListener('click', () => {
 const clickFunctionLeft = (getSlider) => {
     let slider =  document.querySelector(`.${getSlider}`)
     slider.scrollLeft = slider.scrollLeft - 500
+}
+
+
+
+function TextAbstract(text, length) {
+  if (text == null) {
+      return "";
+  }
+  if (text.length <= length) {
+      return text;
+  }
+  text = text.substring(0, length);
+  last = text.lastIndexOf(" ");
+  text = text.substring(0, last);
+  return text + " ...";
 }
 

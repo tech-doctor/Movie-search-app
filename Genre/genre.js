@@ -65,7 +65,7 @@ const genreFunc = (genre_id) => {
               <div class="movieName">${original_title}</div><br>
               <div class="linkToTrailer"><span class="glyphicon glyphicon-play"></span>&nbspPlay trailer</div><br>
 
-              <iframe id="videoPlayer" height="345" width="720" src="https://www.youtube.com/embed/${youtubeKey}" frameborder = "0" allowfullscreen>
+              <iframe loading= "lazy" id="videoPlayer" height="345" width="720" src="https://www.youtube.com/embed/${youtubeKey}" frameborder = "0" allowfullscreen>
               </iframe>
 
               <div class="release">Release Date: ${release_date}</div><br>

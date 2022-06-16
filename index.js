@@ -35,8 +35,9 @@ function uploadData(){
     movieBody.innerHTML = `<div class="spinner"></div>`
     fetchAll()
    .then(([nowPlaying,topRated]) => {
-     const nowPlayingData = shuffle(nowPlaying.results).slice(2,10)
-     const topRatedData = shuffle(topRated.results).slice(4,10)
+     //console.log(nowPlaying.results, topRated.results)
+     const nowPlayingData = nowPlaying.results
+     const topRatedData = topRated.results
       //console.log(nowPlaying)
       nowPlayingData.forEach(element => {
         fetchKey(element.id)

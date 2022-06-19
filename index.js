@@ -193,7 +193,7 @@ const clickFunctionLeft = (getSlider) => {
 
 function TextAbstract(text, length) {
   if (text == null) {
-      return "";
+    return "";
   }
   if (text.length <= length) {
       return text;

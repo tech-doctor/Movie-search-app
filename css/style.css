@@ -421,8 +421,8 @@ body {
   //min-width: fit-content;
   height: 300px;
   //box-shadow: 1px 1px 3px 0px grey;
-  border-radius: 5px;
-  box-shadow: 0px 0.2px 3px grey;
+  border-radius: 3px;
+  box-shadow: 0px 0.2px 3px rgb(38.6%, 38.6%, 38.6%);
   display: inline-block;
   background-color: #2c2c2c;
   margin: 10px 7px;
@@ -877,6 +877,7 @@ body {
   display: none;
   /* background-color: rgb(114, 114, 114); */
 }
+
 .toggle {
   display: block;
 }

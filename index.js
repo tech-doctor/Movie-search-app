@@ -1,3 +1,8 @@
+const copyRight = document.getElementById('copyright')
+const currentYear = new Date().getFullYear();
+copyRight.textContent = `All reserved © ${currentYear}`;
+
+
 async function fetchHTMLtext() {
   const response = await fetch('/Component/header.html');
   const result = await response.text();
@@ -28,11 +33,12 @@ function uploadData(){
       ]);
       const nowPlaying = await nowPlayingResponse.json();
       const topRated = await topRatedResponse.json();
+      console.log(nowPlaying)
       return [nowPlaying, topRated]
     }
     
-    const spinner = document.querySelectorAll('.spinner')
-    movieBody.innerHTML = `<div class="spinner"></div>`
+    const spinner = document.querySelectorAll('.home-loader ')
+    movieBody.innerHTML = `<div class="home-loader"></div>`
     fetchAll()
    .then(([nowPlaying,topRated]) => {
      //console.log(nowPlaying.results, topRated.results)
@@ -79,7 +85,7 @@ function uploadData(){
      `<div class="card">
        <div class="play-icon"><a  href= ${youtubeLink} ><i class=" fas fa-play"></i></a></div>
        <div class="image">
-         <img loading ="lazy" alt = ${title} src=${imageUrl}w200${poster_path}>
+         <img loading ="lazy" alt = ${title} src=${imageUrl}w300${poster_path}>
        </div>
        <div class="details">
           <p class="title">${minimalTitle}</p>

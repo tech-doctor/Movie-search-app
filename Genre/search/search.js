@@ -56,7 +56,7 @@ fetch(searchMovieUrl)
 .then(movieKey => {
   console.log(movieKey);
   console.log('movieKey', movieKey)
-  let poster = imageUrl+'w200'+dataResult.poster_path;
+  let poster = imageUrl+'w300'+dataResult.poster_path;
   let title = dataResult.original_title;
   let releaseDate = dataResult.release_date;
   let overview = dataResult.overview;

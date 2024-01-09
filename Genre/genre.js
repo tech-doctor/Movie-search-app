@@ -42,6 +42,10 @@ const genreFunc = (genre_id) => {
   })
   .catch(error => {
     console.log(error)
+    // const movieTitleLabel = document.getElementById("movieTitleLabel");
+    // movieTitleLabel.innerHTML = '';
+    movieGrid.innerHTML += 'something went wrong please, try again...'
+    inner()
   })
   
 
